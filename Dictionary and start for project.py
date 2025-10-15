@@ -61,31 +61,39 @@ mod7 = {
 #returns: a schedule with an added class
 def add_class(schedule):
     input("Please enter the class you would like to add:")
-    input == A_Block
+    input == Block
     ...
     return schedule
 
 #parameters: a dictionary called schedule
 #returns: a schedule with a changed, preexisting class
 def change_class(schedule):
+    input == Block
     ...
     return schedule
 
 #parameters: a dictionary called schedule
 #returns: a schedule with a removed class
 def drop_class(schedule):
-    .pop
+    Block == ""
     ...
     return schedule
 
 #main function
 def main():
     print("Welcome to Mrs. Carroll's office.")
+    mod = input("Which mod would you like to edit?").lower()
+    valid_actions3 = ["mod 1","mod 2","mod 3","mod 4","mod 5","mod 6","mod 7"]
     user_choice = input("What would you like to do?").lower()
     valid_actions = ["add","drop","change","exit"]
     while user_choice not in valid_actions:
         print("Error. Please pick add, drop, change, or exit.")
         user_choice = input("What would you like to do?").lower()
+    user_choice2 = input("Which class would you like to edit?").lower()
+    valid_actions = ["a block","b block","c block"]
+    while user_choice not in valid_actions:
+        print("Error. Please pick a block, b block, or c block.")
+        user_choice2 = input("Which class would you like to edit?").lower()
     while user_choice != "exit":
         if user_choice == "add":
             mod2 = add_class(mod2)
