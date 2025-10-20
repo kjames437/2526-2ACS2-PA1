@@ -1,10 +1,9 @@
 '''
-Continuation of classwork, graded on completion/effort.
+This is a schedular app where people can add, drop or change classes
 
-Write a program that allows people to add, drop, and change a mod schedule.
+I am proud of the add, drop and change functions
 
-Add functionality to loop this 7 times or whatever for d and e blocks and give an option 
-to make and diplay a full year schedule
+If I had more time I would add e block seasons
 
 '''
 
@@ -59,25 +58,25 @@ mod7 = {
 
 #parameters: a dictionary called schedule
 #returns: a schedule with an added class
-def add_class(schedule, abc):
+def add_class(mod, block):
     block = input("Please enter the name of the class you would like to add:")
     #update the class in schedule variables
-    schedule[abc] = block
-    return schedule
+    [mod] = block
+    return mod
 
 #parameters: a dictionary called schedule
 #returns: a schedule with a changed, preexisting class
-def change_class(schedule):
+def change_class(mod, block):
     block = input("Please enter the class name you would like to change your class to:")
     ...
-    return schedule
+    return mod
 
 #parameters: a dictionary called schedule
 #returns: a schedule with a removed class
-def drop_class(schedule):
+def drop_class(mod, block):
     Block = ""
     ...
-    return schedule
+    return mod
 
 #main function
 def main():
@@ -133,23 +132,32 @@ def main():
                     d_blockS == mod6 ["D_Block"]
                     d_blockS == mod7 ["D_Block"]
             if user_choice3 == "no":
-                user_choice5 = input("Would you like to add an e block? Please say yes or no:")
-                if input == "yes":
-                    e_block = input("Please enter your e block choice:")
-                    e_block == mod1 ["E_Block"]
-                    e_block == mod2 ["E_Block"]
-                    e_block == mod3 ["E_Block"]
-                    e_block == mod4 ["E_Block"]
-                    e_block == mod5 ["E_Block"]
-                    e_block == mod6 ["E_Block"]
-                if user_choice5 == "no":
-                    print("Thanks for stopping by, Here is your schedule!")
-                    print(mod1)
-                    print(mod2)
-                    print(mod3)
-                    print(mod4)
-                    print(mod5)
-                    print(mod6)
-                    print(mod7)
+                if user_choice4 == "exit":
+                    user_choice5 = input("Would you like to add an e block? Please say yes or no:")
+                    if input == "yes":
+                        e_block = input("Please enter your e block choice:")
+                        e_block == mod1 ["E_Block"]
+                        e_block == mod2 ["E_Block"]
+                        e_block == mod3 ["E_Block"]
+                        e_block == mod4 ["E_Block"]
+                        e_block == mod5 ["E_Block"]
+                        e_block == mod6 ["E_Block"]
+                        print("Thanks for stopping by, Here is your schedule!")
+                        print(mod1)
+                        print(mod2)
+                        print(mod3)
+                        print(mod4)
+                        print(mod5)
+                        print(mod6)
+                        print(mod7)
+                    if user_choice5 == "no":
+                        print("Thanks for stopping by, Here is your schedule!")
+                        print(mod1)
+                        print(mod2)
+                        print(mod3)
+                        print(mod4)
+                        print(mod5)
+                        print(mod6)
+                        print(mod7)
 
 main()
