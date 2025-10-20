@@ -1,5 +1,5 @@
 '''
-This is a schedular app where people can add, drop or change classes
+Setting up a version of PA1 that uses files insted of dictionaries
 
 I am proud of the add, drop and change functions
 
@@ -7,54 +7,19 @@ If I had more time I would add e block seasons
 
 '''
 
-mod1 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+mod1 = {}
 
-mod2 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+mod2 = {}
 
-mod3 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+mod3 = {}
 
-mod4 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+mod4 = {}
 
-mod5 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+mod5 = {}
 
-mod6 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+mod6 = {}
 
-mod7 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+mod7 = {}
 
 #parameters: a dictionary called schedule
 #returns: a schedule with an added class
