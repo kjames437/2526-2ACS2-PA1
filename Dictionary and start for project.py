@@ -3,7 +3,7 @@ This is a schedular app where people can add, drop or change classes
 
 I am proud of the add, drop and change functions
 
-If I had more time I would add e block seasons
+If I had more time I would add the e block seasons instead of just the mods
 
 '''
 
