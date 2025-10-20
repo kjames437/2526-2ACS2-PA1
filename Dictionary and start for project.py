@@ -8,60 +8,60 @@ If I had more time I would add the e block seasons instead of just the mods
 '''
 
 mod1 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
 
 mod2 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
 
 mod3 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
 
 mod4 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
 
 mod5 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
 
 mod6 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
 
 mod7 = {
-    "A_Block": "",
-    "B_Block": "",
-    "C_Block": "",
-    "D_Block": "",
-    "E_Block": ""}
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
 
 #parameters: a dictionary called schedule
 #returns: a schedule with an added class
 def add_class(mod, block):
-    block = input("Please enter the name of the class you would like to add:")
+    new_class = input("Please enter the name of the class you would like to add:")
     #update the class in schedule variables
-    [mod] = block
+    mod[block] = new_class
     return mod
 
 #parameters: a dictionary called schedule
@@ -108,11 +108,11 @@ def main():
         print("Error. Please pick a block, b block, or c block.")
         user_choice2 = input("Which block would you like to edit? Please enter a block, b block or c block:").lower()
     while user_choice != "exit": #user choice 2 only with blocks
-        if user_choice2 == "add":
+        if user_choice == "add":
             mod = add_class(mod, user_choice2)
-        elif user_choice2 == "drop":
+        elif user_choice == "drop":
             mod = drop_class(mod)
-        elif user_choice2 == "change":
+        elif user_choice == "change":
             mod = change_class(mod)
         user_choice4 = input("Anything else? Please pick add, drop, change or exit ")
         valid_actions2 = ["add","drop","change","exit"]
@@ -122,26 +122,26 @@ def main():
             user_choice3 = input("Would you like to add a d block? Please say yes or no:")
             if user_choice3 == "yes":
                     d_blockF = input("Please type your d block choice for fall:")
-                    d_blockF == mod1 ["D_Block"]
-                    d_blockF == mod2 ["D_Block"]
+                    mod1["D_Block"] = d_blockF
+                    mod2["D_Block"] = d_blockF
                     d_blockW = input("Please type your d block choice for winter:")
-                    d_blockW == mod3 ["D_Block"]
-                    d_blockW == mod4 ["D_Block"]
-                    d_blockW == mod5 ["D_Block"]
+                    mod3 ["D_Block"] = d_blockW 
+                    mod4 ["D_Block"] = d_blockW 
+                    mod5 ["D_Block"] = d_blockW 
                     d_blockS = input("Please type your d block choice for spring:")
-                    d_blockS == mod6 ["D_Block"]
-                    d_blockS == mod7 ["D_Block"]
-            if user_choice3 == "no":
+                    mod6 ["D_Block"] = d_blockS
+                    mod7 ["D_Block"] = d_blockS
+            elif user_choice3 == "no":
                 if user_choice4 == "exit":
                     user_choice5 = input("Would you like to add an e block? Please say yes or no:")
                     if input == "yes":
                         e_block = input("Please enter your e block choice:")
-                        e_block == mod1 ["E_Block"]
-                        e_block == mod2 ["E_Block"]
-                        e_block == mod3 ["E_Block"]
-                        e_block == mod4 ["E_Block"]
-                        e_block == mod5 ["E_Block"]
-                        e_block == mod6 ["E_Block"]
+                        mod1 ["E_Block"] = e_block
+                        mod2 ["E_Block"] = e_block
+                        mod3 ["E_Block"] = e_block
+                        mod4 ["E_Block"] = e_block
+                        mod5 ["E_Block"] = e_block
+                        mod6 ["E_Block"] = e_block
                         print("Thanks for stopping by, Here is your schedule!")
                         print(mod1)
                         print(mod2)
