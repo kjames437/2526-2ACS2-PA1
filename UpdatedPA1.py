@@ -1,0 +1,163 @@
+'''
+This is a schedular app where people can add, drop or change classes
+
+I am proud of the add, drop and change functions
+
+If I had more time I would add the e block seasons instead of just the mods
+
+'''
+
+mod1 = {
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
+
+mod2 = {
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
+
+mod3 = {
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
+
+mod4 = {
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
+
+mod5 = {
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
+
+mod6 = {
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
+
+mod7 = {
+    "a block": "",
+    "b block": "",
+    "c block": "",
+    "d block": "",
+    "e block": ""}
+
+#parameters: a dictionary called schedule
+#returns: a schedule with an added class
+def add_class(mod, block):
+    new_class = input("Please enter the name of the class you would like to add:")
+    #update the class in schedule variables
+    mod[block] = new_class
+    return mod
+
+#parameters: a dictionary called schedule
+#returns: a schedule with a changed, preexisting class
+def change_class(mod, block):
+    block = input("Please enter the class name you would like to change your class to:")
+    ...
+    return mod
+
+#parameters: a dictionary called schedule
+#returns: a schedule with a removed class
+def drop_class(mod, block):
+    Block = ""
+    ...
+    return mod
+
+#main function
+def main():
+    print("Welcome to Mrs. Carroll's office.")
+    mod = input("Which mod would you like to edit?").lower() #gets which mod to change
+    if mod == "1":
+        mod = mod1
+    elif mod == "2":
+        mod = mod2
+    elif mod == "3":
+        mod = mod2
+    elif mod == "4":
+        mod = mod2
+    elif mod == "5":
+        mod = mod2
+    elif mod == "6":
+        mod = mod2
+    elif mod == "7":
+        mod = mod2
+    valid_actions3 = ["mod 1","mod 2","mod 3","mod 4","mod 5","mod 6","mod 7"]
+    user_choice = input("What would you like to do? Please enter add, drop, change or exit:").lower()
+    valid_actions = ["add","drop","change","exit"]
+    while user_choice not in valid_actions:
+        print("Error. Please pick add, drop, change, or exit.")
+        user_choice = input("What would you like to do? Please enter add, drop, change or exit:").lower()
+    block_choice = input("Which block would you like to edit? Please enter a block, b block or c block:").lower() #gets which block to edit
+    valid_actions = ["a block","b block","c block"]
+    while block_choice not in valid_actions:
+        print("Error. Please pick a block, b block, or c block.")
+        block_choice = input("Which block would you like to edit? Please enter a block, b block or c block:").lower()
+    while user_choice != "exit": #user choice 2 only with blocks
+        if user_choice == "add":
+            mod = add_class(mod, block_choice)
+        elif user_choice == "drop":
+            mod = drop_class(mod)
+        elif user_choice == "change":
+            mod = change_class(mod)
+        additional_choice = input("Anything else? Please pick add, drop, change or exit ")
+        valid_actions2 = ["add","drop","change","exit"]
+        while additional_choice not in valid_actions2:
+            print("Error. Please pick add, drop, change, or exit.")
+        if additional_choice == "exit":
+            dblock_choice = input("Would you like to add a d block? Please say yes or no:")
+            if dblock_choice == "yes":
+                    d_blockF = input("Please type your d block choice for fall:")
+                    mod1["D_Block"] = d_blockF
+                    mod2["D_Block"] = d_blockF
+                    d_blockW = input("Please type your d block choice for winter:")
+                    mod3 ["D_Block"] = d_blockW 
+                    mod4 ["D_Block"] = d_blockW 
+                    mod5 ["D_Block"] = d_blockW 
+                    d_blockS = input("Please type your d block choice for spring:")
+                    mod6 ["D_Block"] = d_blockS
+                    mod7 ["D_Block"] = d_blockS
+            elif dblock_choice == "no":
+                if additional_choice == "exit":
+                    eblock_choice = input("Would you like to add an e block? Please say yes or no:")
+                    if input == "yes":
+                        e_block = input("Please enter your e block choice:")
+                        mod1 ["E_Block"] = e_block
+                        mod2 ["E_Block"] = e_block
+                        mod3 ["E_Block"] = e_block
+                        mod4 ["E_Block"] = e_block
+                        mod5 ["E_Block"] = e_block
+                        mod6 ["E_Block"] = e_block
+                        print("Thanks for stopping by, Here is your schedule!")
+                        print(mod1)
+                        print(mod2)
+                        print(mod3)
+                        print(mod4)
+                        print(mod5)
+                        print(mod6)
+                        print(mod7)
+                    if eblock_choice == "no":
+                        print("Thanks for stopping by, Here is your schedule!")
+                        print(mod1)
+                        print(mod2)
+                        print(mod3)
+                        print(mod4)
+                        print(mod5)
+                        print(mod6)
+                        print(mod7)
+
+main()
