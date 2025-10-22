@@ -4,9 +4,9 @@ B block
 C block
 
 mod 2:
-A block
-B block
-C block
+A block: CS2
+B block: Math
+C block: Admissions
 
 mod 3:
 A block
